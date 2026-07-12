@@ -272,11 +272,21 @@ export default function Download({ shareId }: DownloadProps) {
         </div>
       )}
 
-      <div className="border-t border-zinc-800 px-6 py-3.5 bg-zinc-950/40 text-[10px] text-zinc-500 flex items-start gap-2.5 leading-relaxed rounded-none">
-        <ShieldAlert className="w-4 h-4 text-cyan-500 shrink-0 mt-0.5" />
-        <span>
-          <strong>Anticipate errors:</strong> If the connection fails or stays at 0 peers, try disabling adblockers, privacy extensions, or browser shields (such as Brave Shields) which can block WebRTC connections.
-        </span>
+      <div className="border-t border-zinc-800 px-6 py-4 bg-zinc-950/45 text-[10px] text-zinc-500 space-y-2.5 leading-relaxed rounded-none font-mono">
+        <div className="flex items-start gap-2.5">
+          <ShieldAlert className="w-4 h-4 text-cyan-500 shrink-0 mt-0.5" />
+          <span>
+            <strong>P2P Notice:</strong> Privacy blockers, adblockers, or browser shields (like Brave Shields) frequently block WebRTC. Disable them if the transfer fails.
+          </span>
+        </div>
+        <div className="border-t border-zinc-850 pt-2.5 space-y-1.5 pl-6.5">
+          <p>
+            <strong>CGNAT & VPN Limitations:</strong> Direct peer-to-peer connection requires public IP hole punching (STUN). If either peer is behind a strict VPN (like Cloudflare WARP) or if <strong>both</strong> peers are behind CGNAT (such as sharing from Mobile Data to Mobile Data), direct WebRTC signaling will be blocked.
+          </p>
+          <p>
+            <strong>The Solution:</strong> In double-CGNAT or strict firewall setups, a TURN server is required to relay the encrypted stream. Since your files are encrypted locally with AES-GCM-256 before leaving your browser, the relayed packets remain 100% secure and unreadable by the relay operator.
+          </p>
+        </div>
       </div>
     </div>
   );

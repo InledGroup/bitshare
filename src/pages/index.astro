@@ -209,6 +209,29 @@ import Layout from "../layouts/Layout.astro";
                             </div>
                         </div>
                     </div>
+
+                    <!-- Additional Technical Explanations -->
+                    <div class="border-t border-zinc-800 grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
+                        <!-- Col 1: Why no database -->
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xs font-black text-cyan-400 font-mono tracking-widest uppercase">
+                                Why is there no database?
+                            </h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed font-mono">
+                                Traditional sharing platforms save your file metadata, logs, and accounts on a central database. This creates a data breach risk and a paper trail. By eliminating servers and databases completely, our hosting is 100% blind. We cannot log or track what you share because we literally have no storage to write to.
+                            </p>
+                        </div>
+
+                        <!-- Col 2: How the link is generated -->
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xs font-black text-cyan-400 font-mono tracking-widest uppercase">
+                                How is the secure link generated?
+                            </h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed font-mono">
+                                The browser's Web Crypto API generates a local 256-bit symmetric key and encrypts the file before any peer-to-peer connection is opened. All details (magnet URI, size, type, key, and IV) are encoded in a base64url payload. This payload sits strictly behind the URL hash (#) fragment, which is kept entirely local and is never transmitted to our web server.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -384,7 +407,7 @@ import Layout from "../layouts/Layout.astro";
                 const alpha = (p.z + r) / (2 * r);
                 const fontSize = Math.max(6, Math.min(14, 10 * scale));
 
-                ctx.font = `${fontSize}px 'JetBrains Mono', monospace`;
+                ctx.font = `${fontSize}px 'Geist Mono', monospace`;
                 ctx.fillStyle = `rgba(34, 211, 238, ${alpha * 0.45})`; // cyan-400
                 ctx.fillText(p.char, projX, projY);
             });
