@@ -1,0 +1,397 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Bitshare | Send files securely via P2P | The only auditable site, database-free and 100% static."
+    description="The only auditable (fully on GitHub) and static page, with no metadata. No registration; files encrypted using AES-GCM-256."
+>
+    <!-- Header -->
+    <header
+        class="border-b border-zinc-800 bg-[#070709]/80 backdrop-blur-md sticky top-0 z-50"
+    >
+        <div
+            class="container mx-auto max-w-5xl h-16 flex items-center justify-between px-6"
+        >
+            <a
+                href="/"
+                class="flex items-center gap-2 font-black text-lg tracking-wider text-cyan-400 font-mono"
+            >
+                <img
+                    src="/logo.svg"
+                    alt="Bitshare Logo"
+                    class="w-5 h-5 shrink-0"
+                />
+                <span>BITSHARE</span>
+            </a>
+
+            <nav
+                class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-zinc-500 font-mono"
+            >
+                <a
+                    href="#how-it-works"
+                    class="hover:text-cyan-400 transition-colors"
+                    >How it works</a
+                >
+                <a
+                    href="https://github.com/InledGroup/bitshare"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-cyan-400 transition-colors flex items-center gap-1"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ><path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                    >
+                    GitHub
+                </a>
+            </nav>
+
+            <a
+                href="/share"
+                class="border border-zinc-850 hover:border-cyan-500 hover:text-cyan-400 text-zinc-300 px-5 py-2 text-xs font-bold tracking-widest uppercase transition-all rounded-none font-mono"
+            >
+                Start Sharing
+            </a>
+        </div>
+    </header>
+
+    <main class="relative">
+        <!-- Hero Section -->
+        <section
+            class="relative pt-24 pb-20 md:pt-36 md:pb-24 border-b border-zinc-800 overflow-hidden"
+        >
+            <!-- 3D ASCII Planet Background Canvas -->
+            <canvas
+                id="globe-canvas"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[550px] max-w-5xl -z-10 pointer-events-none opacity-50"
+            ></canvas>
+
+            <div
+                class="container mx-auto px-6 max-w-5xl relative z-10 text-center"
+            >
+                <div
+                    class="inline-flex items-center gap-2 mb-6 text-xs font-bold tracking-widest text-cyan-400 uppercase font-mono"
+                >
+                    <span>// DECENTRALIZED P2P SECURE SHARING</span>
+                </div>
+
+                <h1
+                    class="mb-6 text-4xl md:text-6xl font-black tracking-tight text-white leading-[1.1] max-w-3xl mx-auto font-sans"
+                >
+                    Share files directly <span
+                        class="italic font-serif text-cyan-400 font-light text-glow"
+                        >without any cloud storage</span
+                    >
+                </h1>
+
+                <p
+                    class="max-w-2xl mx-auto mb-10 text-sm md:text-base text-zinc-400 leading-relaxed font-mono"
+                >
+                    Local client-side encryption (AES-GCM-256). Your files never
+                    touch the cloud or any intermediate server. The transfer
+                    takes place directly browser-to-browser (P2P). No
+                    registration required. Reclaim the control of your data.
+                </p>
+
+                <div class="flex items-center justify-center">
+                    <a
+                        href="/share"
+                        class="px-8 py-3.5 bg-cyan-500 hover:bg-cyan-400 text-black text-xs font-black uppercase tracking-widest transition-all rounded-none font-mono shadow-lg shadow-cyan-500/10 hover:scale-[1.02]"
+                    >
+                        Start Sharing Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications -->
+        <section
+            id="details"
+            class="py-16 bg-[#070709] border-b border-zinc-800"
+        >
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="border border-zinc-800 rounded-none bg-black/40">
+                    <div
+                        class="border-b border-zinc-800 px-6 py-4 bg-zinc-950/50 flex justify-between items-center"
+                    >
+                        <h2
+                            class="text-xs font-black tracking-widest text-zinc-400 font-mono uppercase"
+                        >
+                            Technical Specifications
+                        </h2>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-zinc-800"
+                    >
+                        <!-- Col 1 -->
+                        <div class="p-6 space-y-6">
+                            <div>
+                                <h3
+                                    class="text-xs font-black text-cyan-400 font-mono tracking-widest uppercase mb-2"
+                                >
+                                    1. Zero Cloud Storage
+                                </h3>
+                                <p
+                                    class="text-xs text-zinc-400 leading-relaxed font-mono"
+                                >
+                                    We do not store your files, names, sizes, or
+                                    keys. There is no metadata database on the
+                                    server. The page is static. The transfer
+                                    occurs directly between browsers. If the
+                                    sender closes their tab, the transfer
+                                    terminates.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-xs font-black text-cyan-400 font-mono tracking-widest uppercase mb-2"
+                                >
+                                    2. Local Cryptography
+                                </h3>
+                                <p
+                                    class="text-xs text-zinc-400 leading-relaxed font-mono"
+                                >
+                                    The file is encrypted with AES-GCM-256
+                                    inside the sender's browser. The decryption
+                                    key exists solely in the URL hash fragment
+                                    (#), which remains local and is never
+                                    transmitted to our host.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Col 2 -->
+                        <div class="p-6 space-y-6">
+                            <div>
+                                <h3
+                                    class="text-xs font-black text-cyan-400 font-mono tracking-widest uppercase mb-2"
+                                >
+                                    3. Self-Hostable
+                                </h3>
+                                <p
+                                    class="text-xs text-zinc-400 leading-relaxed font-mono"
+                                >
+                                    The entire project is open-source and
+                                    consists of static files. You can audit the
+                                    code or host it yourself on your own server
+                                    or static provider with zero configuration.
+                                    Check the project on GitHub.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-xs font-black text-cyan-400 font-mono tracking-widest uppercase mb-2"
+                                >
+                                    4. Free (0 infra cost) & without login
+                                </h3>
+                                <p
+                                    class="text-xs text-zinc-400 leading-relaxed font-mono"
+                                >
+                                    The maintenance cost for this project is
+                                    zero, so we derive no profit from it, nor is
+                                    there any need to. You do not have to log
+                                    in.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works P2P Diagram -->
+        <section id="how-it-works" class="py-16 bg-[#070709]">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2
+                    class="text-xs font-black text-zinc-550 font-mono tracking-widest uppercase mb-8"
+                >
+                    P2P Transfer Flow
+                </h2>
+
+                <div
+                    class="border border-zinc-800 rounded-none divide-y divide-zinc-800"
+                >
+                    <div
+                        class="p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
+                    >
+                        <span
+                            class="text-xs font-black font-mono text-cyan-400 tracking-widest w-12 shrink-0"
+                            >[01]</span
+                        >
+                        <div class="space-y-1">
+                            <h4
+                                class="font-bold text-sm text-white font-sans uppercase"
+                            >
+                                Local Encryption
+                            </h4>
+                            <p
+                                class="text-xs text-zinc-400 leading-relaxed font-mono"
+                            >
+                                The sender selects a file. The browser generates
+                                a symmetric key and encrypts the file locally in
+                                memory before transmission.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
+                    >
+                        <span
+                            class="text-xs font-black font-mono text-cyan-400 tracking-widest w-12 shrink-0"
+                            >[02]</span
+                        >
+                        <div class="space-y-1">
+                            <h4
+                                class="font-bold text-sm text-white font-sans uppercase"
+                            >
+                                Link Generation
+                            </h4>
+                            <p
+                                class="text-xs text-zinc-400 leading-relaxed font-mono"
+                            >
+                                A WebTorrent P2P swarm is established. All
+                                connection metadata (magnet URI, size, type, and
+                                IV) is encoded directly into the sharing URL
+                                hash.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8"
+                    >
+                        <span
+                            class="text-xs font-black font-mono text-cyan-400 tracking-widest w-12 shrink-0"
+                            >[03]</span
+                        >
+                        <div class="space-y-1">
+                            <h4
+                                class="font-bold text-sm text-white font-sans uppercase"
+                            >
+                                Direct P2P Download
+                            </h4>
+                            <p
+                                class="text-xs text-zinc-400 leading-relaxed font-mono"
+                            >
+                                The receiver opens the link, decodes the hash,
+                                connects directly to the sender via WebRTC,
+                                downloads the encrypted pieces, and decrypts the
+                                file.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<script is:inline>
+    // 3D ASCII Sphere background effect (OpenClaw inspired style, in cyan)
+    const canvas = document.getElementById("globe-canvas");
+    if (canvas) {
+        const ctx = canvas.getContext("2d");
+
+        const resize = () => {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        };
+        resize();
+        window.addEventListener("resize", resize);
+
+        // Generate 3D points on a sphere
+        const points = [];
+        const numPoints = 260;
+        const r = 160; // sphere radius
+
+        for (let i = 0; i < numPoints; i++) {
+            const u = Math.random();
+            const v = Math.random();
+            const theta = u * 2.0 * Math.PI;
+            const phi = Math.acos(2.0 * v - 1.0);
+
+            points.push({
+                x: r * Math.sin(phi) * Math.cos(theta),
+                y: r * Math.sin(phi) * Math.sin(theta),
+                z: r * Math.cos(phi),
+                char: ["0", "1", "+", "-", "x", "=", "#", ":", ".", "*", "%"][
+                    Math.floor(Math.random() * 11)
+                ],
+            });
+        }
+
+        let angleX = 0.002;
+        let angleY = 0.003;
+
+        const draw = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw background faint dots grid
+            ctx.fillStyle = "rgba(255, 255, 255, 0.015)";
+            const spacing = 20;
+            for (let x = 0; x < canvas.width; x += spacing) {
+                for (let y = 0; y < canvas.height; y += spacing) {
+                    ctx.fillRect(x, y, 1, 1);
+                }
+            }
+
+            const cx = canvas.width / 2;
+            const cy = canvas.height / 2;
+
+            // Rotate and project points
+            const rotated = points.map((p) => {
+                // Rotate around Y-axis
+                let x1 = p.x * Math.cos(angleY) - p.z * Math.sin(angleY);
+                let z1 = p.x * Math.sin(angleY) + p.z * Math.cos(angleY);
+
+                // Rotate around X-axis
+                let y2 = p.y * Math.cos(angleX) - z1 * Math.sin(angleX);
+                let z2 = p.y * Math.sin(angleX) + z1 * Math.cos(angleX);
+
+                return { x: x1, y: y2, z: z2, char: p.char };
+            });
+
+            // Increment rotation speeds
+            angleY += 0.0015;
+            angleX += 0.0008;
+
+            // Sort by Z depth (back-to-front rendering)
+            rotated.sort((a, b) => a.z - b.z);
+
+            // Draw characters
+            rotated.forEach((p) => {
+                const distance = 400;
+                const scale = distance / (distance - p.z);
+                const projX = cx + p.x * scale;
+                const projY = cy + p.y * scale;
+
+                // Opacity mapping (further points = fainter)
+                const alpha = (p.z + r) / (2 * r);
+                const fontSize = Math.max(6, Math.min(14, 10 * scale));
+
+                ctx.font = `${fontSize}px 'JetBrains Mono', monospace`;
+                ctx.fillStyle = `rgba(34, 211, 238, ${alpha * 0.45})`; // cyan-400
+                ctx.fillText(p.char, projX, projY);
+            });
+
+            requestAnimationFrame(draw);
+        };
+
+        draw();
+    }
+</script>

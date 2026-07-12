@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Background grid representation -->
+  <style>
+    .ascii-char {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-weight: 700;
+      fill: #22d3ee; /* cyan-400 */
+    }
+  </style>
+  
+  <!-- Subtle background grid dots -->
+  <g opacity="0.08">
+    <rect x="25" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="25" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="75" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="125" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="175" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="225" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="275" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="325" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="375" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="425" y="475" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="25" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="75" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="125" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="175" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="225" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="275" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="325" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="375" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="425" width="2" height="2" fill="#ffffff" />
+    <rect x="475" y="475" width="2" height="2" fill="#ffffff" />
+  </g>
+
+  <!-- 3D ASCII Globe -->
+  <g>
+    <text x="266.3" y="235.1" font-size="10.0" opacity="0.25" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="230.0" y="235.4" font-size="10.0" opacity="0.26" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="267.0" y="271.5" font-size="10.1" opacity="0.26" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="228.9" y="276.4" font-size="10.1" opacity="0.26" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="303.9" y="252.6" font-size="10.2" opacity="0.28" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="196.1" y="246.3" font-size="10.2" opacity="0.28" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="244.6" y="194.1" font-size="10.2" opacity="0.28" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="280.7" y="199.0" font-size="10.3" opacity="0.28" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="242.3" y="312.0" font-size="10.3" opacity="0.29" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="287.3" y="300.8" font-size="10.3" opacity="0.29" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="208.3" y="199.7" font-size="10.3" opacity="0.29" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="197.2" y="292.3" font-size="10.3" opacity="0.29" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="313.6" y="218.0" font-size="10.4" opacity="0.30" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="173.6" y="213.2" font-size="10.5" opacity="0.32" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="165.4" y="264.7" font-size="10.5" opacity="0.32" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="270.0" y="334.8" font-size="10.6" opacity="0.32" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="337.1" y="263.4" font-size="10.6" opacity="0.32" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="325.7" y="296.3" font-size="10.6" opacity="0.32" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="212.4" y="333.2" font-size="10.6" opacity="0.33" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="232.5" y="156.3" font-size="10.7" opacity="0.33" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="271.1" y="157.0" font-size="10.7" opacity="0.33" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="307.5" y="168.1" font-size="10.7" opacity="0.34" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="311.3" y="330.9" font-size="10.8" opacity="0.34" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="170.9" y="315.0" font-size="10.8" opacity="0.34" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="194.1" y="164.2" font-size="10.8" opacity="0.34" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="338.2" y="191.4" font-size="10.8" opacity="0.35" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="356.7" y="229.6" font-size="10.9" opacity="0.36" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="141.6" y="232.7" font-size="10.9" opacity="0.36" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="240.8" y="363.0" font-size="11.0" opacity="0.37" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="157.4" y="178.9" font-size="11.0" opacity="0.37" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="138.6" y="288.2" font-size="11.1" opacity="0.38" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="362.5" y="300.9" font-size="11.2" opacity="0.39" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="191.3" y="359.7" font-size="11.2" opacity="0.39" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="278.6" y="375.3" font-size="11.3" opacity="0.40" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="377.9" y="264.6" font-size="11.3" opacity="0.40" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="266.9" y="119.8" font-size="11.3" opacity="0.41" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="225.0" y="120.8" font-size="11.3" opacity="0.41" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="316.9" y="363.8" font-size="11.4" opacity="0.41" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="307.5" y="128.1" font-size="11.4" opacity="0.41" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="150.2" y="341.9" font-size="11.4" opacity="0.42" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="123.5" y="198.5" font-size="11.5" opacity="0.42" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="113.1" y="256.2" font-size="11.5" opacity="0.42" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="183.9" y="129.8" font-size="11.5" opacity="0.42" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="344.0" y="147.1" font-size="11.5" opacity="0.42" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="387.0" y="216.5" font-size="11.6" opacity="0.43" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="372.4" y="176.9" font-size="11.6" opacity="0.43" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="363.2" y="338.5" font-size="11.6" opacity="0.44" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="225.8" y="392.8" font-size="11.7" opacity="0.44" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="116.3" y="314.9" font-size="11.8" opacity="0.45" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="145.0" y="144.8" font-size="11.8" opacity="0.45" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="178.1" y="388.6" font-size="12.0" opacity="0.47" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="93.1" y="220.9" font-size="12.1" opacity="0.48" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="270.5" y="408.3" font-size="12.1" opacity="0.48" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="409.0" y="266.3" font-size="12.1" opacity="0.48" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="396.4" y="316.4" font-size="12.2" opacity="0.48" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="352.4" y="376.4" font-size="12.2" opacity="0.49" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="264.4" y="86.4" font-size="12.3" opacity="0.49" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="88.7" y="281.5" font-size="12.3" opacity="0.49" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="219.1" y="88.2" font-size="12.3" opacity="0.49" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="109.2" y="163.8" font-size="12.3" opacity="0.50" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="135.6" y="370.6" font-size="12.3" opacity="0.50" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="316.8" y="402.2" font-size="12.3" opacity="0.50" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="309.4" y="93.9" font-size="12.4" opacity="0.50" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="175.1" y="97.8" font-size="12.5" opacity="0.51" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="351.1" y="112.1" font-size="12.5" opacity="0.51" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="419.6" y="223.2" font-size="12.6" opacity="0.52" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="221.4" y="421.9" font-size="12.7" opacity="0.53" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="386.2" y="141.1" font-size="12.7" opacity="0.53" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="410.5" y="179.4" font-size="12.7" opacity="0.53" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="99.1" y="342.3" font-size="12.8" opacity="0.53" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="134.0" y="113.0" font-size="12.9" opacity="0.54" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="399.5" y="352.3" font-size="12.9" opacity="0.55" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="67.3" y="243.7" font-size="13.0" opacity="0.55" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="172.7" y="417.2" font-size="13.1" opacity="0.56" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="77.9" y="184.5" font-size="13.1" opacity="0.56" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="429.5" y="292.4" font-size="13.1" opacity="0.56" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="275.9" y="434.9" font-size="13.2" opacity="0.57" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="69.2" y="306.0" font-size="13.3" opacity="0.58" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="376.5" y="393.1" font-size="13.4" opacity="0.59" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="260.0" y="58.0" font-size="13.5" opacity="0.59" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="127.4" y="398.1" font-size="13.5" opacity="0.59" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="331.8" y="424.3" font-size="13.5" opacity="0.59" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="210.9" y="60.7" font-size="13.6" opacity="0.60" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="97.2" y="131.6" font-size="13.6" opacity="0.60" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="309.3" y="65.2" font-size="13.6" opacity="0.60" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="445.6" y="251.6" font-size="13.7" opacity="0.61" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="356.1" y="83.9" font-size="13.8" opacity="0.61" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="164.1" y="71.6" font-size="13.9" opacity="0.62" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="226.9" y="447.0" font-size="13.9" opacity="0.62" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="397.0" y="114.5" font-size="14.0" opacity="0.62" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="87.6" y="367.1" font-size="14.0" opacity="0.63" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="430.7" y="336.4" font-size="14.0" opacity="0.63" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="444.9" y="203.3" font-size="14.0" opacity="0.63" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="427.9" y="155.5" font-size="14.1" opacity="0.63" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="52.5" y="203.0" font-size="14.2" opacity="0.64" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="47.1" y="262.9" font-size="14.2" opacity="0.64" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="175.4" y="441.7" font-size="14.4" opacity="0.65" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="121.3" y="88.7" font-size="14.5" opacity="0.66" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="292.1" y="452.6" font-size="14.5" opacity="0.66" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="406.2" y="387.6" font-size="14.7" opacity="0.67" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="67.1" y="150.1" font-size="14.7" opacity="0.67" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="55.5" y="325.3" font-size="14.7" opacity="0.67" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="356.6" y="430.9" font-size="14.9" opacity="0.68" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="454.2" y="300.4" font-size="14.9" opacity="0.68" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="125.9" y="420.7" font-size="15.0" opacity="0.69" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="248.1" y="37.8" font-size="15.1" opacity="0.69" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="302.2" y="43.8" font-size="15.2" opacity="0.70" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="194.7" y="43.8" font-size="15.3" opacity="0.70" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="241.4" y="463.9" font-size="15.4" opacity="0.71" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="354.2" y="62.9" font-size="15.4" opacity="0.71" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="464.7" y="250.5" font-size="15.5" opacity="0.71" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="82.2" y="384.7" font-size="15.6" opacity="0.72" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="400.5" y="95.7" font-size="15.6" opacity="0.72" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="85.8" y="109.8" font-size="15.7" opacity="0.73" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="459.0" y="194.7" font-size="15.8" opacity="0.73" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="436.8" y="140.9" font-size="15.8" opacity="0.73" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="435.5" y="361.4" font-size="15.8" opacity="0.73" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="34.7" y="271.9" font-size="15.8" opacity="0.73" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="36.8" y="212.5" font-size="15.8" opacity="0.73" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="144.2" y="60.8" font-size="15.9" opacity="0.74" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="317.0" y="456.7" font-size="16.1" opacity="0.75" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="185.8" y="457.7" font-size="16.1" opacity="0.75" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="387.0" y="419.3" font-size="16.2" opacity="0.75" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="48.4" y="333.0" font-size="16.4" opacity="0.76" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="50.4" y="162.0" font-size="16.5" opacity="0.77" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="131.1" y="433.0" font-size="16.7" opacity="0.78" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="457.8" y="316.5" font-size="16.8" opacity="0.78" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="279.5" y="34.2" font-size="17.1" opacity="0.79" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="263.6" y="467.4" font-size="17.1" opacity="0.79" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="218.3" y="34.6" font-size="17.1" opacity="0.80" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="338.0" y="51.2" font-size="17.3" opacity="0.80" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="82.8" y="388.5" font-size="17.3" opacity="0.81" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="100.3" y="92.9" font-size="17.4" opacity="0.81" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="466.7" y="258.2" font-size="17.4" opacity="0.81" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="390.2" y="85.2" font-size="17.5" opacity="0.81" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="417.0" y="387.3" font-size="17.6" opacity="0.82" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="346.9" y="442.8" font-size="17.7" opacity="0.82" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="156.2" y="55.8" font-size="17.7" opacity="0.82" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="458.2" y="194.5" font-size="17.7" opacity="0.82" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="431.8" y="134.4" font-size="17.7" opacity="0.82" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="34.8" y="257.2" font-size="17.7" opacity="0.82" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="202.7" y="459.1" font-size="17.9" opacity="0.83" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="44.9" y="193.8" font-size="18.2" opacity="0.84" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="49.1" y="318.2" font-size="18.2" opacity="0.84" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="73.9" y="136.1" font-size="18.5" opacity="0.85" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="141.3" y="428.3" font-size="18.6" opacity="0.86" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="439.4" y="335.9" font-size="18.7" opacity="0.86" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="289.9" y="451.9" font-size="18.9" opacity="0.87" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="223.5" y="48.8" font-size="19.1" opacity="0.88" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="376.0" y="407.5" font-size="19.2" opacity="0.88" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="87.9" y="369.3" font-size="19.2" opacity="0.88" class="ascii-char" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="294.4" y="54.0" font-size="19.3" opacity="0.88" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="447.1" y="270.3" font-size="19.5" opacity="0.89" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="137.5" y="87.5" font-size="19.5" opacity="0.89" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="355.7" y="84.3" font-size="19.6" opacity="0.89" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="404.2" y="134.9" font-size="19.8" opacity="0.90" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="435.6" y="199.9" font-size="19.8" opacity="0.90" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="222.4" y="440.0" font-size="19.8" opacity="0.90" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="59.6" y="260.1" font-size="19.9" opacity="0.90" class="ascii-char" text-anchor="middle" dominant-baseline="middle">-</text>
+    <text x="111.0" y="137.9" font-size="20.5" opacity="0.92" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="152.6" y="399.3" font-size="20.5" opacity="0.92" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="396.5" y="351.4" font-size="20.5" opacity="0.92" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="314.5" y="413.8" font-size="20.6" opacity="0.93" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="196.0" y="85.9" font-size="20.7" opacity="0.93" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="93.1" y="316.0" font-size="20.8" opacity="0.93" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="90.3" y="206.7" font-size="21.0" opacity="0.94" class="ascii-char" text-anchor="middle" dominant-baseline="middle">0</text>
+    <text x="280.6" y="95.3" font-size="21.3" opacity="0.95" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+    <text x="400.8" y="280.5" font-size="21.4" opacity="0.95" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="238.3" y="396.1" font-size="21.6" opacity="0.96" class="ascii-char" text-anchor="middle" dominant-baseline="middle">*</text>
+    <text x="342.7" y="139.9" font-size="21.7" opacity="0.96" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="383.3" y="205.7" font-size="21.8" opacity="0.96" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="157.2" y="341.3" font-size="22.0" opacity="0.97" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="329.0" y="353.5" font-size="22.0" opacity="0.97" class="ascii-char" text-anchor="middle" dominant-baseline="middle">:</text>
+    <text x="157.8" y="173.1" font-size="22.0" opacity="0.97" class="ascii-char" text-anchor="middle" dominant-baseline="middle">x</text>
+    <text x="142.5" y="255.3" font-size="22.0" opacity="0.98" class="ascii-char" text-anchor="middle" dominant-baseline="middle">#</text>
+    <text x="232.2" y="144.2" font-size="22.0" opacity="0.98" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="324.3" y="278.5" font-size="22.0" opacity="0.99" class="ascii-char" text-anchor="middle" dominant-baseline="middle">.</text>
+    <text x="240.9" y="328.9" font-size="22.0" opacity="0.99" class="ascii-char" text-anchor="middle" dominant-baseline="middle">+</text>
+    <text x="293.6" y="202.7" font-size="22.0" opacity="0.99" class="ascii-char" text-anchor="middle" dominant-baseline="middle">%</text>
+    <text x="219.0" y="248.3" font-size="22.0" opacity="1.00" class="ascii-char" text-anchor="middle" dominant-baseline="middle">=</text>
+  </g>
+</svg>

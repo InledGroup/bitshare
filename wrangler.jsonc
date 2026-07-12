@@ -1,0 +1,11 @@
+{
+	"name": "tidal-telescope",
+  "compatibility_date": "2026-03-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	}
+}
